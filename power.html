@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Power Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="home.html">Home</a>
+  <a href="index.html">RLC</a>
+  <a href="rc.html">RC</a>
+  <a href="rl.html">RL</a>
+  <a href="dc.html">DC</a>
+  <a href="power.html" class="active">Power</a>
+  <a href="matlab.html">MATLAB</a>
+</nav>
+
+<div class="main">
+<h1>Power Calculator</h1>
+
+<div class="page-info">
+  Mathematical analysis of electrical power dissipation.
+</div>
+
+<div class="section">
+  <h2>📘 Theory</h2>
+  <p>
+    Electrical power represents the rate of energy consumption.
+    In resistive circuits:
+  </p>
+  <p><strong>P = VI, P = I²R, P = V²/R</strong></p>
+</div>
+
+<div class="section">
+  <h2>🧮 Calculator</h2>
+  <div class="container">
+    <label>Voltage (V)</label><input type="number" id="V" value="10">
+    <label>Current (A)</label><input type="number" id="I" value="1">
+    <label>Resistance (Ω)</label><input type="number" id="R" value="10">
+    <button onclick="calculatePower()">Calculate</button>
+    <p id="results"></p>
+  </div>
+  <canvas id="powerChart"></canvas>
+</div>
+
+<div class="section">
+  <h2>📌 Key Observation</h2>
+  <p>
+    Power decreases with increasing resistance for constant voltage.
+  </p>
+</div>
+</div>
+
+<script src="power.js"></script>
+</body>
+</html>

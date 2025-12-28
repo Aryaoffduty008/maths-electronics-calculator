@@ -1,0 +1,96 @@
+/* ================================
+   GLOBAL RESET
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   BODY
+================================ */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f4f7;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  padding: 14px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.navbar a {
+  color: #ffffff;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  color: #bfdbfe;
+}
+
+/* ================================
+   MAIN WRAPPER
+================================ */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px;
+}
+
+/* =======*
+/* ================================
+   PAGE INFO STRIP
+================================ */
+.page-info {
+  background: #e0f2fe;
+  border-left: 5px solid #2563eb;
+  padding: 12px 16px;
+  margin: 15px auto 25px;
+  border-radius: 6px;
+  color: #1e3a8a;
+  font-size: 15px;
+  max-width: 900px;
+}
+
+/* ================================
+   FLOW INDICATOR
+================================ */
+.flow {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 30px;
+  max-width: 700px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.flow span {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #e5e7eb;
+}
+
+.flow span.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* ================================
+   ACTIVE NAV LINK
+================================ */
+.navbar a.active {
+  color: #fde68a;
+  border-bottom: 2px solid #fde68a;
+  padding-bottom: 4px;
+}

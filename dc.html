@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DC Circuit Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="home.html">Home</a>
+  <a href="index.html">RLC</a>
+  <a href="rc.html">RC</a>
+  <a href="rl.html">RL</a>
+  <a href="dc.html" class="active">DC</a>
+  <a href="power.html">Power</a>
+  <a href="matlab.html">MATLAB</a>
+</nav>
+
+<div class="main">
+<h1>DC Circuit Solver</h1>
+
+<div class="page-info">
+  Solution of DC circuits using mesh analysis and matrix methods.
+</div>
+
+<div class="section">
+  <h2>📘 Theory</h2>
+  <p>
+    Mesh analysis applies Kirchhoff’s Voltage Law to each loop.
+    The resulting equations are solved using linear algebra.
+  </p>
+  <p><strong>[A][I] = [V]</strong></p>
+</div>
+
+<div class="section">
+  <h2>🧮 Calculator</h2>
+  <div class="container">
+    <label>R₁ (Ω)</label><input type="number" id="R1" value="10">
+    <label>R₂ (Ω)</label><input type="number" id="R2" value="20">
+    <label>R₃ (Ω)</label><input type="number" id="R3" value="30">
+    <label>V₁ (V)</label><input type="number" id="V1" value="10">
+    <label>V₂ (V)</label><input type="number" id="V2" value="5">
+    <button onclick="solveDC()">Solve</button>
+    <p id="result"></p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>📌 Key Observation</h2>
+  <p>
+    Electrical networks can be solved efficiently using matrix methods.
+  </p>
+</div>
+</div>
+
+<script src="dc.js"></script>
+</body>
+</html>
